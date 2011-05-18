@@ -20,8 +20,6 @@
 		0F41C36F13834D8B00B7CA1B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F41C36D13834D8B00B7CA1B /* MainWindow.xib */; };
 		0F41C37213834D8B00B7CA1B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F41C37113834D8B00B7CA1B /* MainViewController.m */; };
 		0F41C37413834D8B00B7CA1B /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F41C37313834D8B00B7CA1B /* MainView.xib */; };
-		0F41C37713834D8B00B7CA1B /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F41C37613834D8B00B7CA1B /* FlipsideViewController.m */; };
-		0F41C37913834D8B00B7CA1B /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F41C37813834D8B00B7CA1B /* FlipsideView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +41,6 @@
 		0F41C37013834D8B00B7CA1B /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		0F41C37113834D8B00B7CA1B /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		0F41C37313834D8B00B7CA1B /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
-		0F41C37513834D8B00B7CA1B /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
-		0F41C37613834D8B00B7CA1B /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
-		0F41C37813834D8B00B7CA1B /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +93,6 @@
 				0F41C37013834D8B00B7CA1B /* MainViewController.h */,
 				0F41C37113834D8B00B7CA1B /* MainViewController.m */,
 				0F41C37313834D8B00B7CA1B /* MainView.xib */,
-				0F41C37513834D8B00B7CA1B /* FlipsideViewController.h */,
-				0F41C37613834D8B00B7CA1B /* FlipsideViewController.m */,
-				0F41C37813834D8B00B7CA1B /* FlipsideView.xib */,
 				0F41C36213834D8B00B7CA1B /* Supporting Files */,
 			);
 			path = CourseClock;
@@ -174,7 +166,6 @@
 				0F41C36613834D8B00B7CA1B /* InfoPlist.strings in Resources */,
 				0F41C36F13834D8B00B7CA1B /* MainWindow.xib in Resources */,
 				0F41C37413834D8B00B7CA1B /* MainView.xib in Resources */,
-				0F41C37913834D8B00B7CA1B /* FlipsideView.xib in Resources */,
 				0F1BBF331383B11A0052872D /* Icon.png in Resources */,
 				0F1BBF341383B11A0052872D /* Icon@2x.png in Resources */,
 				0F1BBF371383B2C90052872D /* Default.png in Resources */,
@@ -192,7 +183,6 @@
 				0F41C36913834D8B00B7CA1B /* main.m in Sources */,
 				0F41C36C13834D8B00B7CA1B /* CourseClockAppDelegate.m in Sources */,
 				0F41C37213834D8B00B7CA1B /* MainViewController.m in Sources */,
-				0F41C37713834D8B00B7CA1B /* FlipsideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

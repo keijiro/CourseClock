@@ -1,6 +1,4 @@
-#import "FlipsideViewController.h"
-
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+@interface MainViewController : UIViewController {
     CGRect frameGauge;
 }
 
@@ -11,7 +9,6 @@
 @property (nonatomic, retain) IBOutlet UILabel *labelSpan;
 @property (nonatomic, retain) IBOutlet UILabel *labelClock;
 
-- (IBAction)showInfo:(id)sender;
 - (void)processSeconds:(NSTimer*)timer;
 
 @end
