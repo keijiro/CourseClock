@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1BBF331383B11A0052872D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BBF311383B11A0052872D /* Icon.png */; };
+		0F1BBF341383B11A0052872D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BBF321383B11A0052872D /* Icon@2x.png */; };
+		0F1BBF371383B2C90052872D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BBF351383B2C90052872D /* Default.png */; };
+		0F1BBF381383B2C90052872D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BBF361383B2C90052872D /* Default@2x.png */; };
 		0F41C35C13834D8B00B7CA1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F41C35B13834D8B00B7CA1B /* UIKit.framework */; };
 		0F41C35E13834D8B00B7CA1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F41C35D13834D8B00B7CA1B /* Foundation.framework */; };
 		0F41C36013834D8B00B7CA1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F41C35F13834D8B00B7CA1B /* CoreGraphics.framework */; };
@@ -21,21 +25,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F41C35713834D8B00B7CA1B /* CourseClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F1BBF311383B11A0052872D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0F1BBF321383B11A0052872D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		0F1BBF351383B2C90052872D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0F1BBF361383B2C90052872D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0F41C35713834D8B00B7CA1B /* Course Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Course Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F41C35B13834D8B00B7CA1B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0F41C35D13834D8B00B7CA1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F41C35F13834D8B00B7CA1B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0F41C36313834D8B00B7CA1B /* CourseClock-Info.plist */ = {isa = PBXFileReference; path = "CourseClock-Info.plist"; sourceTree = "<group>"; };
+		0F41C36313834D8B00B7CA1B /* CourseClock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CourseClock-Info.plist"; sourceTree = "<group>"; };
 		0F41C36513834D8B00B7CA1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0F41C36713834D8B00B7CA1B /* CourseClock-Prefix.pch */ = {isa = PBXFileReference; path = "CourseClock-Prefix.pch"; sourceTree = "<group>"; };
+		0F41C36713834D8B00B7CA1B /* CourseClock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CourseClock-Prefix.pch"; sourceTree = "<group>"; };
 		0F41C36813834D8B00B7CA1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0F41C36A13834D8B00B7CA1B /* CourseClockAppDelegate.h */ = {isa = PBXFileReference; path = CourseClockAppDelegate.h; sourceTree = "<group>"; };
+		0F41C36A13834D8B00B7CA1B /* CourseClockAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseClockAppDelegate.h; sourceTree = "<group>"; };
 		0F41C36B13834D8B00B7CA1B /* CourseClockAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseClockAppDelegate.m; sourceTree = "<group>"; };
 		0F41C36E13834D8B00B7CA1B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		0F41C37013834D8B00B7CA1B /* MainViewController.h */ = {isa = PBXFileReference; path = MainViewController.h; sourceTree = "<group>"; };
+		0F41C37013834D8B00B7CA1B /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		0F41C37113834D8B00B7CA1B /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		0F41C37313834D8B00B7CA1B /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
-		0F41C37513834D8B00B7CA1B /* FlipsideViewController.h */ = {isa = PBXFileReference; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		0F41C37513834D8B00B7CA1B /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		0F41C37613834D8B00B7CA1B /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		0F41C37813834D8B00B7CA1B /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +74,7 @@
 		0F41C35813834D8B00B7CA1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F41C35713834D8B00B7CA1B /* CourseClock.app */,
+				0F41C35713834D8B00B7CA1B /* Course Clock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +109,10 @@
 		0F41C36213834D8B00B7CA1B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F1BBF351383B2C90052872D /* Default.png */,
+				0F1BBF361383B2C90052872D /* Default@2x.png */,
+				0F1BBF311383B11A0052872D /* Icon.png */,
+				0F1BBF321383B11A0052872D /* Icon@2x.png */,
 				0F41C36313834D8B00B7CA1B /* CourseClock-Info.plist */,
 				0F41C36413834D8B00B7CA1B /* InfoPlist.strings */,
 				0F41C36713834D8B00B7CA1B /* CourseClock-Prefix.pch */,
@@ -112,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0F41C35613834D8A00B7CA1B /* CourseClock */ = {
+		0F41C35613834D8A00B7CA1B /* Course Clock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F41C37C13834D8B00B7CA1B /* Build configuration list for PBXNativeTarget "CourseClock" */;
+			buildConfigurationList = 0F41C37C13834D8B00B7CA1B /* Build configuration list for PBXNativeTarget "Course Clock" */;
 			buildPhases = (
 				0F41C35313834D8A00B7CA1B /* Sources */,
 				0F41C35413834D8A00B7CA1B /* Frameworks */,
@@ -124,9 +136,9 @@
 			);
 			dependencies = (
 			);
-			name = CourseClock;
+			name = "Course Clock";
 			productName = CourseClock;
-			productReference = 0F41C35713834D8B00B7CA1B /* CourseClock.app */;
+			productReference = 0F41C35713834D8B00B7CA1B /* Course Clock.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -149,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F41C35613834D8A00B7CA1B /* CourseClock */,
+				0F41C35613834D8A00B7CA1B /* Course Clock */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +175,10 @@
 				0F41C36F13834D8B00B7CA1B /* MainWindow.xib in Resources */,
 				0F41C37413834D8B00B7CA1B /* MainView.xib in Resources */,
 				0F41C37913834D8B00B7CA1B /* FlipsideView.xib in Resources */,
+				0F1BBF331383B11A0052872D /* Icon.png in Resources */,
+				0F1BBF341383B11A0052872D /* Icon@2x.png in Resources */,
+				0F1BBF371383B2C90052872D /* Default.png in Resources */,
+				0F1BBF381383B2C90052872D /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +222,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keijiro Takahashi (TTU92888H4)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -215,6 +231,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "8D130D37-DC00-4359-A4CF-D51FC9E0DF59";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -223,13 +240,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Keijiro Takahashi (TTU92888H4)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "8D130D37-DC00-4359-A4CF-D51FC9E0DF59";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -274,13 +292,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0F41C37C13834D8B00B7CA1B /* Build configuration list for PBXNativeTarget "CourseClock" */ = {
+		0F41C37C13834D8B00B7CA1B /* Build configuration list for PBXNativeTarget "Course Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F41C37D13834D8B00B7CA1B /* Debug */,
 				0F41C37E13834D8B00B7CA1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

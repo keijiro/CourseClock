@@ -1,22 +1,22 @@
-//
-//  MainViewController.m
-//  CourseClock
-//
-//  Created by 高橋 啓治郎 on 11/05/18.
-//  Copyright 2011 none. All rights reserved.
-//
-
+#import <QuartzCore/QuartzCore.h>
 #import "MainViewController.h"
 
 @implementation MainViewController
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+@synthesize timer = _timer;
+@synthesize viewGauge = _viewGauge;
+@synthesize labelLeft = _labelLeft;
+@synthesize labelSpan = _labelSpan;
+@synthesize labelClock = _labelClock;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    frameGauge = self.viewGauge.frame;
+    [self processSeconds:nil];
+    self.viewGauge.layer.cornerRadius = 8;
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(processSeconds:) userInfo:nil repeats:YES];
 }
-*/
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
 {
@@ -51,14 +51,52 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    self.timer = nil;
 }
+
 
 - (void)dealloc
 {
     [super dealloc];
+}
+
+#pragma mark - Interval Function
+
+- (void)processSeconds:(NSTimer *)timer
+{
+    NSDateComponents *comp = [[NSCalendar currentCalendar] components:(NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit) fromDate:[NSDate date]];
+    
+    int secs = ([comp hour] * 60 + [comp minute]) * 60 + [comp second];
+    
+    if ([comp hour] < 12) {
+        secs -= (10 * 60 + 30) * 60;
+    } else {
+        secs -= (13 * 60 + 30) * 60;
+    }
+    
+    int left = 60 * 60 - secs % (70 * 60);
+    if (left > 0) {
+        self.labelLeft.text = [NSString stringWithFormat:@"%2d:%02d", left / 60, left % 60];
+        
+        float gauge = 1.0 / (60 * 60) * left;
+        CGRect rect = frameGauge;
+        rect.origin.y += rect.size.height * (1.0 - gauge);
+        rect.size.height *= gauge;
+        self.viewGauge.frame = rect;
+        self.viewGauge.backgroundColor = [UIColor redColor];
+    } else {
+        left += 10 * 60;
+        self.labelLeft.text = [NSString stringWithFormat:@"%2d:%02d", left / 60, left % 60];
+
+        float gauge = 1.0 - 1.0 / (10 * 60) * left;
+        CGRect rect = frameGauge;
+        rect.origin.y += rect.size.height * (1.0 - gauge);
+        rect.size.height *= gauge;
+        self.viewGauge.frame = rect;
+        self.viewGauge.backgroundColor = [UIColor blueColor];
+    }
+
+    self.labelClock.text = [NSString stringWithFormat:@"%2d:%02d", [comp hour], [comp minute]];
 }
 
 @end
