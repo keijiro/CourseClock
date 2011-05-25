@@ -52,7 +52,7 @@
     
     int secs = ([comp hour] * 60 + [comp minute]) * 60 + [comp second];
     
-    if ([comp hour] < 12) {
+    if ([comp hour] < 13) {
         secs -= (10 * 60 + 30) * 60;
     } else {
         secs -= (13 * 60 + 30) * 60;
